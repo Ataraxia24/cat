@@ -1,0 +1,39 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/cat?serverTImeout=UTC
+      username: root
+      password: root
+  mail:
+    host: smtp.qq.com
+    username: 2930620160@qq.com
+    password: ciccbiwiuobwdffe
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+  cache:
+    redis:
+      time-to-live: 1800000
+  mvc:
+    formcontent:
+      filter:
+        enabled: false
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: "cat_"
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+cat:
+  path: D:\Ablog\img\
+
+
+

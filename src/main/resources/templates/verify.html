@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><span th:text="${user}"></span>感谢您访问该博客</h1>
+<div style="background: green;width: 80%;">
+    <p style="color: white;">您的验证码为:<span style="font-size:22px;color:black;" th:text="${code}"></span>, 请妥善保管好, 时间有效五分钟,请尽快完成注册
+        点击下方链接重回博客:
+    </p>
+    <a th:href="${url}">个人博客</a>
+    <p style="font-style: italic;">
+        Last, thank you again for visiting our blog. I am just a sophomore in Information Engineering college of
+        YangZhou polytechnic institute.​ <br>I have finished this website with my friend and I was responsible for
+        the
+        back-end development of this item. <br>Therefore, your every click is a kind of encouragement. <br>Even if
+        we are
+        strangers, I also think that you deserve to be trusted and at this moment, I wish you good morning, good
+        afternoon, good morning.​
+    </p>
+</div>
+
+
+</body>
+</html>
